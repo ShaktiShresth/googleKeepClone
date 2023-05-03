@@ -40,6 +40,7 @@ const addNewNote = (text = "") => {
   //delete note
   delBtn.addEventListener("click", (ev) => {
     note.remove();
+    updateLocalStorageData();
   });
 
   //toggle edit button
